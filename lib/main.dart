@@ -16,7 +16,18 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Home_Page(); 
-    );
+      home: const Home_Page());
+    
+    
+  }
+}
+
+
+class Home_Page extends StatelessWidget {
+  const Home_Page({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
