@@ -60,7 +60,9 @@ Row(
        price: '\$50',
        ),
   ],
-)
+), 
+SizedBox(height: 30), 
+Text('Choose from popular categories')
              ],)
           
      ) );
