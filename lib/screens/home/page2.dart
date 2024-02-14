@@ -14,13 +14,34 @@ class _Page2State extends State<Page2> {
     return Container(
       height: 400, 
       width: size.width,
-      child: const Padding(
-        padding: EdgeInsets.only(left: 80), 
+      child:  Padding(
+        padding: const EdgeInsets.only(left: 80), 
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('HOT DESSERTS', style: TextStyle(color: Colors.black,
-             fontWeight: FontWeight.w900),)
+            const Text('HOT DESSERTS', 
+            style: TextStyle(
+              color: Colors.black,
+             fontWeight: FontWeight.w900),), 
+             const SizedBox(height: 30), 
+            ListView(physics: const BouncingScrollPhysics(),
+            scrollDirection: Axis.horizontal,
+             children:  [
+Stack(
+  children: [
+    Container(
+      width: 120, 
+    height: 50,
+    decoration: const BoxDecoration(
+      boxShadow: [
+        BoxShadow(color: Colors.black12),
+      ]
+    ),
+
+    ),
+  ],
+)
+             ],)
           ],
         ),
       ),

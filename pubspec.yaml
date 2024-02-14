@@ -60,7 +60,7 @@ flutter:
     - assets/images/hot_desset/2.png
     - assets/images/hot_desset/3.png
     - assets/images/hot_desset/4.png
-    - asset/images/hot_desset/5.png
+    - assets/images/hot_desset/5.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
