@@ -26,10 +26,7 @@ class _Page2State extends State<Page2> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text('HOT DESSERTS', 
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.black,
-             fontWeight: FontWeight.w900),), 
+            style: Header1), 
              const SizedBox(height: 50), 
          
 Row(
@@ -62,7 +59,7 @@ Row(
   ],
 ), 
 SizedBox(height: 30), 
-Text('Choose from popular categories')
+Text('Choose from popular categories'.toUpperCase(), style: Header1,)
              ],)
           
      ) );
