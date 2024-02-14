@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:restuarant_ui/constants.dart';
+
+import 'home_widget.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -38,13 +41,23 @@ child: const Padding(
   child: Column(
   crossAxisAlignment: CrossAxisAlignment.start,
     children: [
+      SizedBox(height: 10), 
       Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text('BellyMax'),
-           Icon(FontAwesomeIcons.bagShopping),
+           
+          Text('BellyMax', 
+          style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),),
+      
+          Expanded(child: 
+          Row(
+           
+            children: [ Icon(FontAwesomeIcons.bagShopping),
           Icon(FontAwesomeIcons.user),
           Icon(FontAwesomeIcons.phone),
-       
+       ],)
+          ), 
+          
         ],
       ), 
       SizedBox(height: 160),
@@ -55,10 +68,15 @@ child: const Padding(
       fontSize: 40,
        color: Colors.black),), 
       SizedBox(height: 20), 
-      Text('data'), 
+      Text('"Lorem ipsum dolor sit amet, consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris \nnisi ut aliquip ex ea commodo consequat.', style: TextStyle(fontSize: 16,
+       fontWeight: FontWeight.w400),),
+      SizedBox(height: 20),  
+      page1Btn(), 
+
     ],
   ),
 )
     );
   }
 }
+
