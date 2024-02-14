@@ -71,6 +71,28 @@ flutter:
     - assets/icons/categories/pizza.png
     - assets/icons/categories/chicken.png
 
+    #all 
+    - assets/products/all/1.jpg
+    - assets/products/all/2.jpg
+    - assets/products/all/3.jpg
+    - assets/products/all/4.jpg
+    - assets/products/all/5.jpg
+    - assets/products/all/6.jpg
+    - assets/products/all/7.jpg
+    - assets/products/all/8.jpg
+    - assets/products/all/9.jpg
+    - assets/products/all/10.jpg
+    - assets/products/all/11.jpg
+    - assets/products/all/12.jpg
+    # - assets/products/all/13.jpg
+    # - assets/products/all/14.jpg
+    # - assets/products/all/15.jpg
+    # - assets/products/all/16.jpg
+    # - assets/products/all/17.jpg
+    # - assets/products/all/18.jpg
+    # - assets/products/all/19.jpg
+    # - assets/products/all/20.jpg
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
