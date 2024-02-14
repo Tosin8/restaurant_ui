@@ -74,7 +74,7 @@ child:  Padding(
           
         ],
       ), 
-      const SizedBox(height: 160),
+      const SizedBox(height: 140),
       const Text('We make \nDelicious Food', 
       style: TextStyle
       (fontWeight: FontWeight.w700, 
@@ -84,13 +84,13 @@ child:  Padding(
       const SizedBox(height: 20), 
       const Text('"Lorem ipsum dolor sit amet, consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris \nnisi ut aliquip ex ea commodo consequat.', style: TextStyle(fontSize: 16,
        fontWeight: FontWeight.w400),),
-      const SizedBox(height: 20),  
+      const SizedBox(height: 30),  
       const page1Btn(), 
-      const SizedBox(height: 30,), 
+      const SizedBox(height: 40,), 
       Row(
         children: [
-      facebook,
-      insta, 
+      facebook, const SizedBox(width: 15,),
+      insta, const SizedBox(width: 15,),
       tik 
         ],
       )
