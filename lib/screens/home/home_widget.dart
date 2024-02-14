@@ -88,10 +88,16 @@ child:  Padding(
       const page1Btn(), 
       const SizedBox(height: 40,), 
       Row(
+        
         children: [
-      facebook, const SizedBox(width: 15,),
-      insta, const SizedBox(width: 15,),
-      tik 
+
+      
+socialmedia(socialIcon: facebook, press: (){}), 
+const SizedBox(width: 12), 
+socialmedia(socialIcon: insta, press: (){}), 
+const SizedBox(width: 12),
+socialmedia(socialIcon: tik, press: (){}),
+    
         ],
       )
 
@@ -99,6 +105,23 @@ child:  Padding(
   ),
 )
     );
+  }
+}
+
+class socialmedia extends StatelessWidget {
+  const socialmedia({super.key, required this.socialIcon, required this.press
+    
+  });
+
+final Image socialIcon;  
+final Function press; 
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector( 
+      onTap:() {
+      press;
+    },
+    child: socialIcon);
   }
 }
 
