@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restuarant_ui/constants.dart';
 
 class Page2 extends StatefulWidget {
   const Page2({super.key});
@@ -47,6 +48,14 @@ Stack(
       child: Image.asset(
         'assets/images/hot_desset/1.png',
       ),
+    ), 
+    Column(
+      children: [
+        Text('Chicken Fry'), 
+        Text(
+          "'\$60", style: TextStyle(color: kPrimaryColor),
+        )
+      ],
     )
   ],
 )
