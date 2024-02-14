@@ -52,3 +52,78 @@ final Function press;
   }
 }
 
+class hotDessertCard extends StatelessWidget {
+  const hotDessertCard({
+    Key? key,
+    required this.food,
+    required this.title,
+    required this.price,
+  }) : super(key: key);
+
+final Image food; 
+final String title; 
+final String price; 
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+    //fit: StackFit.passthrough,  
+    clipBehavior: Clip.none, 
+    
+      children: [
+        Container(
+          width: 230, 
+        height: 75,
+        decoration: const BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(15)),
+          boxShadow: [
+            BoxShadow(color: Colors.black12),
+          
+          ]
+        ),
+    
+        ),
+        Positioned(
+          top: -30, 
+          child: Container(
+            width: 100, height: 100,
+            decoration: const BoxDecoration(
+              shape: BoxShape.circle
+            ),
+            child:
+ food
+            
+          ),
+        ), 
+         Positioned(
+          top: 10, 
+          left: 110,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(title, 
+              style: TextStyle(color: Colors.black, fontSize: 15),), 
+              Text(
+                price, style: TextStyle(color: kPrimaryColor),
+              )
+            ],
+          ),
+        ), 
+        Positioned(
+          bottom: 0,
+          right: 0,
+          child: Container(
+              
+              width: 30, height: 30, 
+              decoration: const BoxDecoration(color: kPrimaryColor,
+               borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(15), 
+                topLeft: Radius.circular(10),)),
+              child: const Icon(Icons.add, color: Colors.white,size: 20,),
+            ),
+        ),
+      
+      ],
+    );
+  }
+}

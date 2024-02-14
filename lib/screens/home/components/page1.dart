@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import 'home_widget.dart';
+import '../home_widget.dart';
 
 class Page1 extends StatelessWidget {
   const Page1({super.key});
@@ -10,10 +10,10 @@ class Page1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    
     return Container(
-      width: size.width,
-      height: 600, 
+    width: double.infinity,
+      height: 650, 
       decoration: const BoxDecoration(
         image: DecorationImage(
         image: AssetImage('assets/images/wallpaper.png'),
