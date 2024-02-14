@@ -39,6 +39,15 @@ Stack(
     ),
 
     ),
+    Container(
+      width: 80, height: 80,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle
+      ),
+      child: Image.asset(
+        'assets/images/hot_desset/1.png',
+      ),
+    )
   ],
 )
              ],)
