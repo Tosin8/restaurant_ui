@@ -61,6 +61,16 @@ flutter:
     - assets/images/hot_desset/3.png
     - assets/images/hot_desset/4.png
     - assets/images/hot_desset/5.png
+
+    #categories
+    - assets/icons/categories/beef.png
+    - assets/icons/categories/burger.png
+    - assets/icons/categories/fish.png
+    - assets/icons/categories/all.png
+    - assets/icons/categories/pasta.png
+    - assets/icons/categories/pizza.png
+    - assets/icons/categories/chicken.png
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
