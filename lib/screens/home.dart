@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(),
       body: ListView(
         children: [
-          Page1()
+          const Page1()
         ],
       )
     );
@@ -22,18 +22,11 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-height: 300, 
-width: double.infinity,
-child: Row(
-  children: [
-    Column(
-      children: [
-        Text('We make \n Delicious Meal', style: TextStyle(color: Colors.green, fontSize: 30),)
-      ],
-    ),
-    Image.asset('asset/1.png')
-  ],
-),
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+        image: AssetImage('assets/images/wallpaper.png')
+        ))
+
 
     );
   }
