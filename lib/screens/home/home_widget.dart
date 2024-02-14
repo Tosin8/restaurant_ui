@@ -29,10 +29,10 @@ class page1Btn extends StatelessWidget {
 }
 
 
-Image facebook = Image.asset('assets/icons/facebook.png');
+Image facebook = Image.asset('assets/icons/social_media/facebook.png');
 
-Image insta = Image.asset('assets/icons/instagram.png');
-Image tik = Image.asset('assets/icons/tik-tok.png');
+Image insta = Image.asset('assets/icons/social_media/instagram.png');
+Image tik = Image.asset('assets/icons/social_media/tik-tok.png');
 
 
 class socialmedia extends StatelessWidget {
