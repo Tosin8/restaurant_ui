@@ -127,3 +127,46 @@ final String price;
     );
   }
 }
+
+
+
+
+class hotDessertRow extends StatelessWidget {
+  const hotDessertRow({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+     
+      children: [
+        hotDessertCard(
+          food: Image.asset('assets/images/hot_desset/1.png'), 
+          title: 'Chicken Fry',
+           price: '\$50',
+           ),
+           SizedBox(width: 15), 
+           hotDessertCard(
+          food: Image.asset('assets/images/hot_desset/2.png'), 
+          title: 'Chicken Fry',
+           price: '\$50',
+           ),SizedBox(width: 15), hotDessertCard(
+          food: Image.asset('assets/images/hot_desset/3.png'), 
+          title: 'Chicken Fry',
+           price: '\$50',
+           ),SizedBox(width: 15), hotDessertCard(
+          food: Image.asset('assets/images/hot_desset/4.png'), 
+          title: 'Chicken Fry',
+           price: '\$50',
+           ),SizedBox(width: 15), 
+           hotDessertCard(
+          food: Image.asset('assets/images/hot_desset/5.png'), 
+          title: 'Chicken Fry',
+           price: '\$50',
+           ),
+      ],
+    );
+  }
+}
+
