@@ -29,8 +29,14 @@ class page1Btn extends StatelessWidget {
 }
 
 
+Image facebook = Image.asset('assets/icons/facebook.png');
+
+Image insta = Image.asset('assets/icons/instagram.png');
+Image tik = Image.asset('assets/icons/tik-tok.png');
 class Page1 extends StatelessWidget {
   const Page1({super.key});
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -44,13 +50,13 @@ class Page1 extends StatelessWidget {
          fit: BoxFit.cover, 
         )), 
 
-child: const Padding(
-  padding: EdgeInsets.only(left: 80), 
+child:  Padding(
+  padding: const EdgeInsets.only(left: 80), 
   child: Column(
   crossAxisAlignment: CrossAxisAlignment.start,
     children: [
-      SizedBox(height: 10), 
-      Row(
+     const  SizedBox(height: 10), 
+      const Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
            
@@ -68,22 +74,24 @@ child: const Padding(
           
         ],
       ), 
-      SizedBox(height: 160),
-      Text('We make \nDelicious Food', 
+      const SizedBox(height: 160),
+      const Text('We make \nDelicious Food', 
       style: TextStyle
       (fontWeight: FontWeight.w700, 
       wordSpacing: 4,
       fontSize: 40,
        color: Colors.black),), 
-      SizedBox(height: 20), 
-      Text('"Lorem ipsum dolor sit amet, consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris \nnisi ut aliquip ex ea commodo consequat.', style: TextStyle(fontSize: 16,
+      const SizedBox(height: 20), 
+      const Text('"Lorem ipsum dolor sit amet, consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris \nnisi ut aliquip ex ea commodo consequat.', style: TextStyle(fontSize: 16,
        fontWeight: FontWeight.w400),),
-      SizedBox(height: 20),  
-      page1Btn(), 
-      SizedBox(height: 30,), 
+      const SizedBox(height: 20),  
+      const page1Btn(), 
+      const SizedBox(height: 30,), 
       Row(
         children: [
-          
+      facebook,
+      insta, 
+      tik 
         ],
       )
 
