@@ -66,13 +66,19 @@ const SizedBox(height: 30),
             ),
           ),
         ),
-        const Text('Chicken Flavor', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800, color: Colors.black),), 
+        const Text('Chicken Flavor', 
+        style: TextStyle(fontSize: 15, 
+        fontWeight: FontWeight.w800, 
+        color: Colors.black),), 
         const Divider(), 
         const Row(
           children: [
             Text('60 Reviews'),
             SizedBox(height: 20,
-             child: VerticalDivider(width: 10, thickness: 1, color: Colors.black,),), 
+             child: VerticalDivider(width: 10, 
+             thickness: 1,
+              color: Colors.black,
+              ),), 
              
           ],
         )
