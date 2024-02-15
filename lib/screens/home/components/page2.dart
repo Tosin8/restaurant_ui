@@ -55,12 +55,18 @@ const SizedBox(height: 30),
                 image: AssetImage('assets/products/all/4.jpg',),
                  fit: BoxFit.cover)
             ),
-            child: const Align(
-              alignment: Alignment.topRight,
-              child: Icon(FontAwesomeIcons.heart)),
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(colors: [
+                  Colors.black.withOpacity(0.6), 
+
+                ], 
+                begin: Alignment.bottomRight)
+              ),
+            ),
           ),
         ),
-        const Text('Chicken Flavor', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: Colors.black),), 
+        const Text('Chicken Flavor', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800, color: Colors.black),), 
         const Divider(), 
         const Row(
           children: [
