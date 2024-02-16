@@ -7,10 +7,22 @@ class Page6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400, 
+      height: 500, 
       width: double.infinity, 
-      decoration: BoxDecoration(
-        color: kPrimaryColor, 
+      decoration: const BoxDecoration(
+        //color: kPrimaryColor, 
+        image: DecorationImage(
+          image: AssetImage('assets/banner/bkg.jpg'), fit: BoxFit.cover,),
+      ),
+      child: Row(
+        children: [
+          Container(
+            child: Image.asset('assets/banner/phone.png')
+          ), 
+          const Column(children: [
+            Text('Now with your favorite\nBelly Max mobile app in your pocket')
+          ],)
+        ],
       ),
     );
   }

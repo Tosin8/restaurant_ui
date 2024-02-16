@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
             Page4(), 
             SizedBox(height: 10), 
             Page5(), 
-            SizedBox(height: 20), 
+          SizedBox(height: 5,), 
             Page6(), 
           ],
         ),
