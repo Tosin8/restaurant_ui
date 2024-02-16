@@ -94,6 +94,11 @@ flutter:
     # - assets/products/all/20.jpg
     #receipe of the week
     - assets/products/receipe/2.png
+
+    #why us
+    - assets/icons/why_us/best_offer.png
+    - assets/icons/why_us/fast_delivery.png
+    - assets/icons/why_us/fresh_food.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
