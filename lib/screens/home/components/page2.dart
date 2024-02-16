@@ -1,10 +1,10 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:restuarant_ui/constants.dart';
 
 import '../home_widget.dart';
+
 
 class Page2 extends StatefulWidget {
   const Page2({super.key});
@@ -49,10 +49,10 @@ const SizedBox(height: 30),
              topRight: Radius.circular(10), 
           ),
           child: Container(
-            height: 120, width: 180,
-            decoration: const BoxDecoration(
+            height: 180, width: 320, 
+            decoration:  BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/products/all/4.jpg',),
+                image: AssetImage('assets/products/all/1.jpg'),
                  fit: BoxFit.cover)
             ),
             child: Container(

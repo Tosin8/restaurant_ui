@@ -15,7 +15,7 @@ class AllProduct {
     required this.reviews,
   });
 
-}
+
 
 List<AllProduct> allProducts = [
   AllProduct(
@@ -52,3 +52,6 @@ List<AllProduct> allProducts = [
      reviews: '50 Reviews', 
      category: 'Beef'), 
 ]; 
+
+}
+
