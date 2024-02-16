@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'components/page1.dart';
 import 'components/page2.dart';
 import 'components/page3.dart';
+import 'components/page4.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -23,6 +24,8 @@ class Home extends StatelessWidget {
             Page2(), 
             SizedBox(height: 20), 
             Page3(), 
+            SizedBox(height: 20), 
+            Page4(), 
           ],
         ),
       );

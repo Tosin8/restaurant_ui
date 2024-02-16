@@ -14,7 +14,7 @@ class Page3 extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('RECEIPE OF THE WEEK', style: Header1,), 
+            const Text('RECIPES OF THE WEEK', style: Header1,), 
             const SizedBox(height: 20),
             Row(
               children: [
@@ -30,9 +30,13 @@ class Page3 extends StatelessWidget {
                         const Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris \nnisi ut aliquip ex ea commodo consequat.'), 
                         const SizedBox(height: 15), 
                         Container(height: 40, width: 150, 
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(6), 
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(6), 
                         color: kPrimaryColor),
-                        child: const Align(child: Text('LEARN MORE', style: TextStyle(color: Colors.white),),),)
+                        child: const Align(
+                          child: Text('LEARN MORE', style: TextStyle(color: Colors.white),),),
+                          ), 
+                          SizedBox(height: 60),
                       ],
                     ),
                   )
