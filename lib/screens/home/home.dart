@@ -33,3 +33,10 @@ class Home extends StatelessWidget {
   }
 }
 
+
+// We offer unbeatable deal on our top-selling product bringing the price lower than it ever been.''
+//assets/icons/why_us/best_offer.png
+
+//Best Offers
+
+//style: TextStyle(color: Colors.black, fontSize: 20
