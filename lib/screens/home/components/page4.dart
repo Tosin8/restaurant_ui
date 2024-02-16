@@ -3,6 +3,7 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
+import '../home_widget.dart';
 
 
 class Page4 extends StatelessWidget {
@@ -16,12 +17,26 @@ class Page4 extends StatelessWidget {
         const Text('WHY CHOOSE US? ', style: Header1,),
         const SizedBox(height: 20,), 
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             whyUsCard(
               title: 'Best Offers',
               subtext: 'We offer unbeatable deal on our top-selling product bringing the price lower than it ever been',
               image: Image.asset('assets/icons/why_us/best_offer.png', color: Colors.green,),
-            )
+            ),
+            SizedBox(width: 60), 
+            whyUsCard(
+              title: 'Fast Delivery',
+              subtext: 'We offer unbeatable deal on our top-selling product bringing the price lower than it ever been',
+              image: Image.asset('assets/icons/why_us/fast_delivery.png', color: Colors.green,),
+            ),
+             SizedBox(width: 60), 
+            whyUsCard(
+              title: 'Fresh Food',
+              subtext: 'We offer unbeatable deal on our top-selling product bringing the price lower than it ever been',
+              image: Image.asset('assets/icons/why_us/fresh_food.png', color: Colors.green,),
+            ),
+             
           ],
         )
       ],
@@ -29,32 +44,3 @@ class Page4 extends StatelessWidget {
   }
 }
 
-class whyUsCard extends StatelessWidget {
-  const whyUsCard({super.key,  
-  required this.title, 
-   required this.subtext, 
-   required this.image, 
-   
-   
-  });
-
-final String title; 
-final String subtext;
-final Image image; 
-  @override
-  Widget build(BuildContext context) {
-
-    return Container(
-      height: 300, width: 230,
-      child: Column(
-        children: [
-         Container(
-          height: 100, width: 100,
-          child: (image), 
-          ), 
-      Text(title.toUpperCase(), style: TextStyle(color: kPrimaryColor,fontSize: 20, fontWeight: FontWeight.bold),), 
-          Text(subtext,textAlign: TextAlign.center, )
-        ]),
-    );
-  }
-}

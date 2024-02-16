@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:restuarant_ui/constants.dart';
+import 'package:simple_shadow/simple_shadow.dart';
 
 class Page3 extends StatelessWidget {
   const Page3({super.key});
@@ -19,7 +20,12 @@ class Page3 extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  child:  Image.asset('assets/products/receipe/2.png')),
+                  child:  SimpleShadow(
+                    opacity: 0.3,
+                    offset: Offset(5, 5),
+                    sigma: 7,
+                    
+                    child: Image.asset('assets/products/receipe/2.png'))),
                   SizedBox(width: 120), 
                   Expanded(
                     child: Column(

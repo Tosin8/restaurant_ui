@@ -6,6 +6,7 @@ import 'components/page1.dart';
 import 'components/page2.dart';
 import 'components/page3.dart';
 import 'components/page4.dart';
+import 'components/page5.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -26,6 +27,8 @@ class Home extends StatelessWidget {
             Page3(), 
             SizedBox(height: 20), 
             Page4(), 
+            SizedBox(height: 20), 
+            Page5(), 
           ],
         ),
       );
