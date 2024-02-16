@@ -7,7 +7,7 @@ class Page5 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 150,
+      height: 380,
       decoration: BoxDecoration(
      
       ),
