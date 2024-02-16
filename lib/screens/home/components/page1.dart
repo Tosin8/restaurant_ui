@@ -32,13 +32,13 @@ child:  Padding(
            
           Text('BellyMax', 
           style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),),
-      
+      SizedBox(width: 1000,),
           Expanded(child: 
           Row(
            
-            children: [ Icon(FontAwesomeIcons.bagShopping),
-          Icon(FontAwesomeIcons.user),
-          Icon(FontAwesomeIcons.phone),
+            children: [ Icon(FontAwesomeIcons.bagShopping, color: Colors.white,), SizedBox(width: 30,), 
+          Icon(FontAwesomeIcons.user, color: Colors.white,), SizedBox(width: 30,), 
+          Icon(FontAwesomeIcons.phone, color: Colors.white,),
        ],)
           ), 
           
