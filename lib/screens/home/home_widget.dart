@@ -265,3 +265,108 @@ final String title;
      color: Colors.black),);
   }
 }
+
+
+
+class allProductCard extends StatelessWidget {
+  const allProductCard({
+    Key? key,
+    required this.image,
+    required this.title,
+    required this.price,
+    required this.category,
+    required this.calories,
+  }) : super(key: key);
+
+final String image; 
+final String title; 
+final String price;
+final String category; 
+final String calories;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 300, width: 200,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(30), 
+      ), 
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ClipRRect(
+            borderRadius: const BorderRadius.only(
+              topLeft: Radius.circular(10), 
+               topRight: Radius.circular(10), 
+            ),
+            child: Container(
+              height: 180, width: 320, 
+              decoration:   BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(image),  
+                   fit: BoxFit.cover)
+              ),
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(colors: [
+                    Colors.black.withOpacity(0.6), 
+    
+                  ], 
+                  begin: Alignment.bottomRight)
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 10,), 
+           Text(title, 
+          style: const TextStyle(fontSize: 18, 
+          fontWeight: FontWeight.w800, 
+          color: Colors.black),), 
+          const Divider(), 
+           Row(
+            children: [
+              Text(category,),
+              const SizedBox(height: 20,
+               child: VerticalDivider(width: 10, 
+               thickness: 1,
+                color: Colors.black,
+                ),
+              ), 
+              Text(calories, 
+              style: TextStyle(color: Colors.black.withOpacity(0.8)),),  
+            ],
+          ), 
+          const SizedBox(height: 5,), 
+           Row(
+            children: [
+             Text(price, style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 18),), 
+              const SizedBox(width: 20,),
+              const Icon(Icons.favorite_outline), 
+              const SizedBox(width: 10,),
+              addButton()
+    
+            ],
+          )
+        ]
+      
+      
+      
+                 ),
+    );
+  }
+
+  GestureDetector addButton() {
+    return GestureDetector( 
+              onTap: (){},
+              child: Container(
+                height: 30, width: 30,
+                  decoration: const BoxDecoration(
+                  shape: BoxShape.circle, 
+                  color: kPrimaryColor
+                  ), 
+                  child: const Icon(Icons.add, size: 18, color: Colors.white,),
+              ),
+            );
+  }
+}
+
