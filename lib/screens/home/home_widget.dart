@@ -200,3 +200,54 @@ final Image image;
     );
   }
 }
+
+class mobileAppCard extends StatelessWidget {
+  const mobileAppCard({
+    Key? key,
+    required this.image,
+    required this.subtitle,
+    required this.title,
+    required this.press,
+  }) : super(key: key);
+
+final Image image; 
+final String subtitle; 
+final String title; 
+final Function press; 
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector( 
+      onTap: (){
+        press; 
+      },  
+      child: Container(
+        height: 80, width: 250,
+      decoration: BoxDecoration(
+        color: Colors.white, 
+      borderRadius: BorderRadius.circular(30)),
+      child: Row(
+        children: [
+          Container(
+            width: 60, height: 60,
+            child: image), 
+            const SizedBox(width: 10,), 
+            Padding(
+              padding: EdgeInsets.only(top: 12.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(subtitle, style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 18),
+                  ),
+                  Text(title, style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 23),)
+                ],
+              ),
+            )
+      
+        ],
+      ),
+      ),
+    );
+  }
+}

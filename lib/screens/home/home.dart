@@ -8,6 +8,7 @@ import 'components/page3.dart';
 import 'components/page4.dart';
 import 'components/page5.dart';
 import 'components/page6.dart';
+import 'components/page7.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -32,6 +33,8 @@ class Home extends StatelessWidget {
             Page5(), 
           SizedBox(height: 5,), 
             Page6(), 
+            SizedBox(height: 20,), 
+            Page7(), 
           ],
         ),
       );
@@ -40,9 +43,6 @@ class Home extends StatelessWidget {
 }
 
 
-// We offer unbeatable deal on our top-selling product bringing the price lower than it ever been.''
-//assets/icons/why_us/best_offer.png
-
-//Best Offers
-
-//style: TextStyle(color: Colors.black, fontSize: 20
+// 'assets/icons/banner_app/apple.png'
+// Download on the 
+// App Store
