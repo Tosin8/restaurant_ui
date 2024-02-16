@@ -251,3 +251,18 @@ final Function press;
     );
   }
 }
+
+class subNav extends StatelessWidget {
+  const subNav({
+    Key? key,
+    required this.title,
+  }) : super(key: key);
+
+final String title; 
+  @override
+  Widget build(BuildContext context) {
+    return Text(title, 
+    style: const TextStyle(fontSize: 15, 
+     color: Colors.black),);
+  }
+}
