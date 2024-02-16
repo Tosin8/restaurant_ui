@@ -55,3 +55,6 @@ List<AllProduct> allProducts = [
 
 }
 
+
+
+// assets/products/all/4.jpg
