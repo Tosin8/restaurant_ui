@@ -63,7 +63,7 @@ flutter:
     - assets/images/hot_desset/4.png
     - assets/images/hot_desset/5.png
 
-    #categories
+    #categories tab bar
     - assets/icons/categories/beef.png
     - assets/icons/categories/burger.png
     - assets/icons/categories/fish.png
